@@ -1,6 +1,6 @@
 /**
  * Lanuper Centro Comercial - Lógica do Site
- * Desenvolvedor: [Seu Nome/AI]
+ * Desenvolvedor: Greice Lacerda
  */
 
 // 1. Função para abrir informações adicionais (Modais Simples)

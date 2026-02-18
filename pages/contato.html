@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Lanuper Centro Comercial</title>
+    <link rel="stylesheet" href="../styles/comuns.css">
+    <link rel="stylesheet" href="../styles/contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="../images/LanuperTranp2026.jpg" alt="Lanuper Logo" class="logo-large">
+            <nav class="navbar-tabs">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="tab">Início</a></li>
+                    <li><a href="sobreLanuper.html" class="tab">Sobre o Lanuper</a></li>
+                    <li><a href="workshops.html" class="tab">Workshops</a></li>
+                    <li><a href="contato.html" class="tab active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contato-main">
+        <section class="contato-section">
+            <div class="contato-header">
+                <h1>Fale Conosco</h1>
+                <p>Tem dúvidas sobre aluguéis ou quer se inscrever em um curso? Preencha o formulário abaixo.</p>
+            </div>
+
+            <div class="contato-wrapper">
+                <form id="form-contato" class="contato-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="Name" placeholder="Seu nome aqui" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="tel" id="whatsapp" name="WhatsApp" placeholder="(21) 99999-9999" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interesse">Assunto de Interesse</label>
+                        <select id="interesse" name="Interesse" required>
+                            <option value="" disabled selected>Selecione uma opção...</option>
+                            <optgroup label="Imóveis & Espaços">
+                                <option value="Aluguel de Loja">Aluguel de Loja</option>
+                                <option value="Espaço para Eventos">Espaço para Eventos</option>
+                            </optgroup>
+                            <optgroup label="Cursos (Workshops)">
+                                <option value="Workshop Ar Condicionado">Manutenção de Ar Condicionado</option>
+                                <option value="Workshop Pintura">Pintura em Tecido</option>
+                                <option value="Workshop Crochê">Crochê</option>
+                                <option value="Workshop Tricô">Tricô</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentario">Comentário ou Dúvida</label>
+                        <textarea id="comentario" name="Comentario" rows="4"
+                            placeholder="Deixe sua mensagem..."></textarea>
+                    </div>
+
+                    <button type="submit" id="btn-submit" class="btn-enviar">
+                        <span>Enviar Mensagem</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div id="form-status"></div>
+                </form>                
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <div class="footer-info">
+            <p class="copyright">&copy; 2026 Lanuper Centro Comercial - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/contato.js"></script>
+</body>
+
+</html>

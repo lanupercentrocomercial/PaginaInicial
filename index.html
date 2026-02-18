@@ -18,10 +18,10 @@
             <nav class="navbar-tabs">
                 <ul class="nav-links">
                     <li><a href="pages/sobreLanuper.html" class="tab">Sobre o Lanuper</a></li>
-                    <li><a href="#lojas" class="tab active">Lojas</a></li>
+                    <li><a href="#lojas" class="tab active">Comentários</a></li>
                     <li><a href="#servicos" class="tab">Serviços</a></li>
                     <li><a href="./pages/workshops.html" class="tab">Workshops</a></li>
-                    <li><a href="#vitrine" class="tab">Vitrine & Eventos</a></li>
+                    <li><a href="#vitrine" class="tab">Lojas e Eventos</a></li>
                     <li><a href="#contato" class="tab">Contato</a></li>
                 </ul>
             </nav>
@@ -29,7 +29,7 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section id="servicos" class="hero">
             <h1>Inovação e praticidade para você!</h1>
             <p>Tudo o que você precisa em um só lugar em Itambi.</p>
         </section>
@@ -40,7 +40,7 @@
                 <h3>Serviços</h3>
                 <p>Pagamento de contas, recargas de celular e de cartão de transporte.</p>
                 <br><strong>Visite nossa loja!</strong>
-                <button class="btn">Ver Lista</button>
+                <button class="btn" onclick="location.href='pages/servicos.html'"> Ver Lista</button>
             </div>
 
             <div class="card" id="lojas-info">
@@ -48,28 +48,56 @@
                 <h3>Aluguel de Lojas</h3>
                 <p>Espaços comerciais estratégicos para o seu negócio decolar.</p>
                 <br><strong>Abra a sua loja!</strong>
-                <button class="btn">Saber Mais</button>
+                <button class="btn" onclick="location.href='pages/aluguel.html'">Saber Mais</button>
             </div>
 
             <div class="card" id="workshops-info">
                 <img src="images/LanuperWorkshops1.png" alt="Lanuper Cursos" class="logo-pequeno">
                 <h3>Cursos Profissionalizantes</h3>
-            
+
                 <p class="card-list">
-            
+
                 <div class="date-badge">Início: 07 de Março</div>
-            
+
                 <p>Capacitação técnica para gerar renda. <br><strong>Garanta sua vaga!</strong></p>
-            
-                <button class="btn" onclick="location.href='./pages/workshops.html'"> Quero me inscrever</button>
+
+                <button class="btn" onclick="location.href='./pages/workshops.html'"> Conheça nossos cursos</button>
             </div>
 
             <div class="card" id="eventos-info">
-                <img src="images/LanuperFestaEventos4.png" alt="Lanuper eventos" class="logo-pequeno">
+                <img src="images/LanuperConcursos.png" alt="Lanuper eventos" class="logo-pequeno">
                 <h3>Aluguel de Espaço</h3>
                 <p>Espaço com infraestrutura completa para sua festa ou reunião. <br><strong>(Em breve)</strong>
-                <button class="btn">Saber Mais</button>
+                    <button class="btn" onclick="location.href='pages/espacoEvento.html'">Saber Mais</button>
             </div>
+        </section>
+
+        <section class="grid-cards concurso-section">
+            <div><img src="images/LanuperConcursos.png" alt="Concurso Lanuper" class="concurso-image"
+                    style="width: 100%; "><br><br>
+                <h3 class="concurso-title">Não deixe a matemática te eliminar do concurso dos seus sonhos!</h3>
+            </div>
+            <div><br><h3 style="color:black; margin: 20px auto;">Confira os editais abertos e previstos. <br> <br>Prepare-se com antecedência.</h3></div>
+
+            <div> 
+                <ul
+                    style="padding-left: 40px; color:black; font-size: 20px; text-align: justify;  margin: 45px auto;">
+                    <li>Prefeitura de Itaboraí </li>
+                    <li>Maricá (Diversos Cargos)</li>
+                    <li>Correios </li>
+                    <li>Banco do Brasil </li>
+                    <li>PMERJ (Soldado) </li>
+                    <li>IBGE</li>
+                </ul>
+            </div>
+            <div style="margin: 45px auto; font-size: 20px; ">
+                <h3>Estamos aqui para te ajudar a realizar esse sonho!</h3><br>
+                <strong style="color:black;">Garanta sua vaga!</strong><br>
+                <button class="btn" onclick="location.href='pages/concurso.html'">Saber Mais</button>
+            </div>
+            </div>
+        </section>
+
         </section>
 
         <section id="vitrine" class="partners-section">
@@ -83,7 +111,8 @@
                         <div class="partner-desc">
                             <h3>Loja de Artesanatos para Decoração</h3>
                             <p>Os melhores trabalhos para a decoração de sua casa aqui no Lanuper.</p>
-                            <a href="https://greice-lacerda.github.io/SiteCineaArtes/index.html" target="_blank" class="btn-visit">Visite o Site</a>
+                            <a href="https://greice-lacerda.github.io/SiteCineaArtes/index.html" target="_blank"
+                                class="btn-visit">Visite o Site</a>
                         </div>
                     </div>
                 </div>
@@ -94,7 +123,8 @@
                         <div class="partner-desc">
                             <h3>Montagem e Manutenção</h3>
                             <p>Especialistas em computadores, impressoras, consoles e outras tecnologias para você.</p>
-                            <a href="./pages/Site-AF-TECK/af-teck-index.html" target="_blank" class="btn-visit">Visite o Site</a>
+                            <a href="./pages/Site-AF-TECK/af-teck-index.html" target="_blank" class="btn-visit">Visite o
+                                Site</a>
                         </div>
                     </div>
                 </div>
@@ -105,18 +135,67 @@
                         <div class="partner-desc">
                             <h3>Salão de Eventos</h3>
                             <p>Espaço amplo com infraestrutura completa para sua festa ou reunião.</p>
-                            <a href="./pages/Site-Lanuper-Eventos/Lanuper-eventos-index.html" class="btn-visit"><b>Em breve</b></a>
+                            <a href="./pages/Site-Lanuper-Eventos/Lanuper-eventos-index.html" class="btn-visit"><b>Em
+                                    breve</b></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="lojas" class="depoimentos-section">
+            <div class="container">
+                <h2 class="section-title">O que dizem nossos alunos e parceiros</h2>
+                <div id="depoimentos-container" class="depoimentos-grid">
+                    <p class="loading-msg">Carregando depoimentos...</p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            async function carregarDepoimentos() {
+                // Seu link do Google Apps Script
+                const urlScript = "https://script.google.com/macros/s/AKfycbzFaB1JFXU6yiHOhy0AYWRnW4LYv7LNZ5ZS17QiE7lnoWdmZLnZ9k2qNtslH4MqC-hG/exec";
+                const container = document.getElementById('depoimentos-container');
+
+                try {
+                    const resposta = await fetch(urlScript);
+                    const dados = await resposta.json();
+
+                    if (dados.length === 0) {
+                        container.innerHTML = "<p>Nenhum depoimento aprovado no momento.</p>";
+                        return;
+                    }
+
+                    // Limpa o "Carregando..." e insere os cards
+                    container.innerHTML = dados.map(item => `
+                <div class="depoimento-card">
+                    <div class="depoimento-header">
+                        <span class="user-icon">👤</span>
+                        <div>
+                            <h4>${item.nome}</h4>
+                            <small>${item.interesse}</small>
+                        </div>
+                    </div>
+                    <p class="depoimento-texto">"${item.texto}"</p>
+                </div>
+            `).join('');
+
+                } catch (erro) {
+                    console.error("Erro ao carregar:", erro);
+                    container.innerHTML = "<p>Não foi possível carregar os depoimentos.</p>";
+                }
+            }
+
+            // Inicia a função ao carregar a página
+            window.onload = carregarDepoimentos;
+        </script>
+
     </main>
 
     <footer id="contato">
         <div class="footer-info">
             <p><i class="fas fa-map-marker-alt"></i> R. Carlos Alberto Ferreira da Silva, L.1, Q.24 - Itambi</p>
-            <p><i class="fas fa-phone"></i> (21) 96940-9553 | (21) 98887-4861</p>
             <p><i class="fas fa-envelope"></i> lanupercentrocomercial@gmail.com</p><br>
             <p class="copyright">&copy; 2026 Lanuper Centro Comercial - Todos os direitos reservados.</p>
         </div>

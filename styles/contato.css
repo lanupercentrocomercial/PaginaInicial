@@ -1,0 +1,128 @@
+.contato-main {
+    background: #f8f9fa;
+    padding: 60px 5%;
+    min-height: 80vh;
+}
+
+.contato-section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contato-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contato-header h1 {
+    color: #E94C4C;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+.contato-form {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #E94C4C;
+    outline: none;
+    box-shadow: 0 0 8px rgba(233, 76, 76, 0.2);
+}
+
+.btn-enviar {
+    background: #E94C4C;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+.btn-enviar:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.info-card i {
+    font-size: 1.5rem;
+    color: #E94C4C;
+    margin-bottom: 10px;
+}
+
+.info-card h3 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.info-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+#form-status {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 850px) {
+    .contato-wrapper {
+        grid-template-columns: 1fr;
+    }
+}

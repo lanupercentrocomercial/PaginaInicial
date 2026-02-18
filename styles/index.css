@@ -8,3 +8,89 @@
     /* Fundo branco para logos com transparência */
     margin: 0px auto;
 }
+
+/* Estilos para a Seção de Depoimentos */
+.depoimentos-section {
+    padding: 60px 5%;
+    background-color: #fdfdfd;
+    text-align: center;
+}
+
+
+.depoimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.depoimento-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-bottom: 4px solid #E94C4C;
+    transition: 0.3s;
+}
+
+.depoimento-card:hover {
+    transform: translateY(-5px);
+}
+
+.depoimento-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.user-icon {
+    font-size: 2rem;
+    background: #f0f0f0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.depoimento-header h4 {
+    margin: 0;
+    color: #333;
+}
+
+.depoimento-header small {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.depoimento-texto {
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+}
+
+.loading-msg {
+    color: #888;
+    font-style: italic;
+}
+
+.concurso-section{
+    width: 85%;
+    max-height: 380px;
+    margin: 0 auto;
+    padding: 60px 5%;
+    background: linear-gradient(to bottom, #ffffff, #d5f4f8);
+    border-bottom: #E94C4C 8px solid;
+    border-radius: 25px;
+    text-align: center;
+    color: #E94C4C;
+}
+
+.concurso-title{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
